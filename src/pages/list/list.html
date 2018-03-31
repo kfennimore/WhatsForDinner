@@ -3,18 +3,81 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>My First List</ion-title>
+    <ion-title>My Ingredients</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon name="{{item.icon}}" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
+    <ion-list>
+        <ion-item-sliding>
+          <ion-item>
+            <ion-avatar item-start>
+                <img src="http://cdn1.coachmag.co.uk/sites/coachmag/files/styles/16x9_480/public/eggs.png?itok=limAbPhS&timestamp=1380554518">
+              </ion-avatar>
+              <h2>Eggs</h2>
+            </ion-item>
+            <ion-item-options side="right">
+              <button ion-button color="danger">
+                <ion-icon name="trash"></ion-icon>
+                Delete
+              </button>
+          </ion-item-options>
+        </ion-item-sliding>
+        <ion-item-sliding>
+          <ion-item>
+              <ion-avatar item-start>
+                  <img src="https://pics.drugstore.com/prodimg/418589/450.jpg">
+                </ion-avatar>
+                <h2>Milk</h2>
+              </ion-item>
+              <ion-item-options side="right">
+                <button ion-button color="danger">
+                  <ion-icon name="trash"></ion-icon>
+                  Delete
+                </button>
+            </ion-item-options>
+          </ion-item-sliding>
+          <ion-item-sliding>
+            <ion-item>
+                <ion-avatar item-start>
+                    <img src="https://www.nifeislife.com/images/300/M00905.jpg">
+                  </ion-avatar>
+                  <h2>Butter</h2>
+                </ion-item>
+                <ion-item-options side="right">
+                  <button ion-button color="danger">
+                    <ion-icon name="trash"></ion-icon>
+                    Delete
+                  </button>
+              </ion-item-options>
+            </ion-item-sliding>
+            <ion-item-sliding>
+              <ion-item>
+                  <ion-avatar item-start>
+                      <img src="http://st1.foodsd.co.il/Images/Articles/xxl/al50y1rdah3e7x3a.jpg">
+                    </ion-avatar>
+                    <h2>Bread</h2>
+                  </ion-item>
+                  <ion-item-options side="right">
+                    <button ion-button color="danger">
+                      <ion-icon name="trash"></ion-icon>
+                      Delete
+                    </button>
+                </ion-item-options>
+              </ion-item-sliding>
+              <ion-item-sliding>
+                <ion-item>
+                    <ion-avatar item-start>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuoDX9OdSKoJf9Y4j7AtWru0mkA5boQ9ZV9tJuDTBJWQ-iPWa_">
+                      </ion-avatar>
+                      <h2>Greek Yogurt</h2>
+                    </ion-item>
+                    <ion-item-options side="right">
+                      <button ion-button color="danger">
+                        <ion-icon name="trash"></ion-icon>
+                        Delete
+                      </button>
+                    </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>
 </ion-content>
