@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the IngredientsPage page.
+ * Generated class for the AddingredientPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-ingredients',
-  templateUrl: 'ingredients.html',
+  selector: 'page-addingredient',
+  templateUrl: 'addingredient.html',
 })
-export class IngredientsPage {
+export class AddingredientPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad IngredientsPage');
+    console.log('ionViewDidLoad AddingredientPage');
   }
 
 }

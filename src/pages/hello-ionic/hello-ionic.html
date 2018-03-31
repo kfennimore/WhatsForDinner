@@ -3,23 +3,32 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Hello Ionic</ion-title>
+    <ion-title>What's For Dinner?</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
 
-  <h3>Welcome to your first Ionic app!</h3>
+    <ion-slides pager>
 
-  <p>
-    This starter project is our way of helping you get a functional app running in record time.
-  </p>
-  <p>
-    Follow along on the tutorial section of the Ionic docs!
-  </p>
-  <p>
-    <button ion-button color="primary" menuToggle>Toggle Menu</button>
-  </p>
+        <ion-slide style="background: linear-gradient( #5e7bda,  rgb(39, 82, 175))">
+          <h2>WHAT'S FOR DINNER?</h2>
+          <img src="https://cdn.stocksnap.io/img-thumbs/280h/7QH4K6AESO.jpg"/>
+          <div id= AddIngredient ><button ion-button block>Add Ingredients</button></div>
+          
+
+          <button ion-button block>Find Recipes</button>
+        </ion-slide>
+      
+        <ion-slide style="background-color: rgb(39, 82, 175)">
+          <h2>The App that helps you decide what to eat...</h2>
+        </ion-slide>
+      
+        <ion-slide style="background-color: rgb(39, 82, 175)">
+          <h2>Based on what you already have in your house!</h2>
+        </ion-slide>
+      
+      </ion-slides>
 
 </ion-content>
